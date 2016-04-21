@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title
+  //- p Welcome to #{title}
+  h1 Country: #{body.sys.country}
+  h1 City: #{body.name}
+  p #{body.weather[0].main}
+  p #{body.main.temp} Degrees
+  p #{body.wind.speed} MPH #{body.wind.deg} Degrees
